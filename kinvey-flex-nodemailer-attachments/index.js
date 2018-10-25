@@ -55,7 +55,7 @@ kinveyFlexSDK.service((error, flex) => {
             }
         });
         // Attempt to send the e-mail message.
-        transporter.sendMail(createGmailCalenderEVent(context.body), (error, data) => {
+        transporter.sendMail(createGmailCalenderEvent(context.body), (error, data) => {
             // Not good.
             if(error){
                 flex.logger.error(error);
