@@ -1,0 +1,31 @@
+{
+  "name": "kinvey-flex-nodemailer-attachments",
+  "version": "1.0.0",
+  "description": "Example Kinvey Flex service used for sending Calendar Event attachments with Nodemailer.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilger-progress/kinvey-flex-nodemailer-attachments.git"
+  },
+  "keywords": [
+    "Kinvey",
+    "Flex",
+    "Service",
+    "Nodemailer",
+    "Attachments"
+  ],
+  "author": "Bilger Yahov @ Kinvey by Progress",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilger-progress/kinvey-flex-nodemailer-attachments/issues"
+  },
+  "homepage": "https://github.com/bilger-progress/kinvey-flex-nodemailer-attachments#readme",
+  "dependencies": {
+    "ical-generator": "^1.3.0",
+    "kinvey-flex-sdk": "^3.1.2",
+    "nodemailer": "^4.6.8"
+  }
+}
