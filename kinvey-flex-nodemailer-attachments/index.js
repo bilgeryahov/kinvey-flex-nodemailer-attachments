@@ -16,9 +16,9 @@ const mailingServiceConfig = require("./mailingServiceConfig.json");
  * @returns {Object} Oject which contains data for the e-mail
  * message to be sent. 
  */
-const createGmailCalenderEVent = function (options) {
+const createGmailCalenderEvent = function (options) {
     let cal = ical();
-    cal.addEvent({
+    cal.createEvent({
         start: new Date(options.start),
         end: new Date(options.end),
         summary: options.subject,
@@ -44,7 +44,7 @@ kinveyFlexSDK.service((error, flex) => {
        console.log("Error while initializing Flex!");
        return; 
     }
-
+    // Register the Kinvey Flex Function.
     flex.functions.register("sendMessage", (context, complete, modules) => {
         // Create the Nodemailer message transporter.
         let transporter = nodemailer.createTransport({
