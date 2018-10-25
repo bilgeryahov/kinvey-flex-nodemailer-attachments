@@ -1,8 +1,8 @@
 {
   "name": "kinvey-flex-nodemailer-attachments",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Example Kinvey Flex service used for sending Calendar Event attachments with Nodemailer.",
-  "main": "src/index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
