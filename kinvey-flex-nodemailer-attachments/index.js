@@ -26,6 +26,7 @@ const createGmailCalenderEvent = function (options) {
         location: options.location
     });
     return {
+        replyTo: options.replyTo,
         from: options.from,
         to: options.to,
         subject: options.subject,
